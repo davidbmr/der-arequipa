@@ -1,0 +1,348 @@
+.ideA__contenedor {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 4rem;
+  margin: 4rem auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ideA__contenedor h2 {
+  color: var(--gray-900, #101828);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px; /* 122.222% */
+  letter-spacing: -0.72px;
+  padding: 5rem 2rem;
+}
+
+.cards__container_all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 7rem;
+}
+
+.img__1 {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+.card__container {
+  display: flex;
+  width: 100%;
+  height: 500px;
+
+  padding: 0px 32px;
+  align-items: center;
+
+  gap: 96px;
+}
+
+.check__items__card {
+  display: flex;
+  padding: 0 2rem;
+  width: 80%;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.check__items__card h3 {
+  color: var(--gray-900, #101828);
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px; /* 126.667% */
+}
+
+.check__items__card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #475467;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+}
+
+.check__items__card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  text-align: justify;
+}
+
+.featureicon {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  border: 8px solid var(--primary-50, #f9f5ff);
+  background: var(--primary-100, #f4ebff);
+}
+
+.card__container:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+
+.features__container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 80px 32px;
+  align-self: stretch;
+  background: #f9fafb;
+}
+
+.features__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.features__header h2 {
+  color: var(--gray-900, #101828);
+  font-size: 36px;
+  padding: 0;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.72px;
+  text-align: start;
+}
+
+.features__header p {
+  color: var(--gray-600, #475467);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  text-align: start;
+}
+
+.featureIcons {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #342071;
+}
+
+.features__item {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  gap: 24px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.features__item p {
+  color: var(--gray-600, #475467);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.items__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+/* ////////////////////TEAM SECTION////////////////// */
+
+.team__section {
+  display: flex;
+  padding: 40px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  align-self: stretch;
+}
+
+.team__container {
+  display: flex;
+
+  width: 100%;
+  height: auto;
+  padding: 0 1.5rem;
+  gap: 96px;
+}
+
+.team__header {
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  flex-shrink: 0;
+}
+
+.team__header h2 {
+    color: var(--gray-900, #101828);
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px; /* 122.222% */
+    letter-spacing: -0.72px;
+    padding: 0;
+}
+
+.team__header p{
+    color: var(--gray-600, #475467);
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 150% */
+text-align: start;
+}
+
+.team__card__container {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 38px;
+}
+
+.item3__card {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  width: 100%;
+}
+
+.item__card_team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+}
+
+.item__card_team h4 {
+  color: var(--gray-900, #101828);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 155.556% */
+  text-align: start;
+}
+
+.item__card_team span {
+  color: #342071;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  text-align: start;
+}
+
+.item__card_team .role {
+  color: var(--gray-600, #475467);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  text-align: start;
+}
+
+.item__text {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (width < 900px){
+  .card__container{
+   flex-direction: column;
+   height: auto;
+   width: 100%;
+  }
+
+  .check__items__card {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .img__1 {
+    width:100%;
+  }
+
+  .check__items__card p{
+    text-align: start;
+  }
+
+  .card__container:nth-child(2) {
+    flex-direction: column;
+  }
+  
+  .items__container{
+    flex-wrap: wrap;
+  }
+
+  .team__container{
+    flex-direction: column;
+    width: 100%;
+  }
+  .team__header{
+    width: 100%;
+  }
+
+  .team__card__container{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .item__card_team{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .item3__card{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+ 
+  }

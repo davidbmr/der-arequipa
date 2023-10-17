@@ -1,0 +1,123 @@
+.select__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.select__container label {
+  color: var(--gray-700, #344054);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+ 
+}
+
+.upload__container {
+    display: flex;
+    padding: 16px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    border-radius: 12px;
+border: 1px dashed var(--gray-200, #EAECF0);
+background: var(--base-white, #FFF);
+}
+
+.uploadLabel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.img__upload {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--gray-200, #eaecf0);
+  background: var(--base-white, #fff);
+
+  /* Shadow/xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.upload__container p {
+  color: var(--gray-600, #475467);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+
+.upload__container p span {
+  color: var(--degradado, #583ab3);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+}
+
+.upload__container span {
+  color: var(--gray-600, #475467);
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
+
+.uploadButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 95%; /* o el valor que creas más conveniente */
+  overflow: hidden;
+  white-space: nowrap; /* Esto es para evitar que el texto se divida en varias líneas */
+  text-overflow: ellipsis;
+}
+
+
+.img__upload {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+border: 1px solid var(--gray-200, #EAECF0);
+background: var(--base-white, #FFF);
+
+/* Shadow/xs */
+box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.removeButton {
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.removeButton:hover {
+  background-color: #e04141;
+}
+
+.upload__container input {
+  display: none;
+}

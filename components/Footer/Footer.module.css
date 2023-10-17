@@ -1,0 +1,138 @@
+.footer {
+  background-color: var(--base-semi-black);
+  color: #ededed;
+  padding: 2.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
+
+.container_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  padding: 0 4rem;
+  gap: 2rem;
+}
+
+.container_2 {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+
+  color: #c6b5f8;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.item_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item_1 div p {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.item_1 p {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.item_1 h6 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-orange);
+}
+
+.socials {
+  display: flex;
+  gap: 14px;
+}
+
+.socials img {
+  cursor: pointer;
+}
+
+.lista__footer {
+  display: flex;
+  list-style: none;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.lista__footer a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.lista__footer li {
+  color: #c6b5f8;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+.contact_item {
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+  height: 30px;
+  color: #c6b5f8;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 171.429% */
+}
+
+.contact_item img {
+  width: 25px;
+  height: 25px;
+}
+
+@media (width < 900px) {
+  .footer {
+    width: 100%;
+    margin: 0;
+    padding: 2rem 0;
+    justify-content: start;
+  }
+
+  .container_1 {
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .container_2 {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .socials {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .lista__footer {
+    display: none;
+  }
+}

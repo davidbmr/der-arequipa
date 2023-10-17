@@ -1,0 +1,11 @@
+.input__style{
+    width: 100%;
+    display: flex;
+    
+}
+
+@media (width > 900px) {
+    .input__style{
+        justify-content: flex-end;
+    }
+}

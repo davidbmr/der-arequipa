@@ -1,0 +1,56 @@
+.container__1 {
+  display: flex;
+  gap: 28px;
+  color: var(--primary-purple);
+  padding: 0.3rem 7rem;
+  width: 95%;
+}
+
+.container__1 img {
+  display: block;
+  width: 580px;
+  height: 411px;
+}
+
+.title_1 {
+  line-height: 50px;
+  font-size: 2.5rem;
+}
+
+.text_container {
+  padding: 0 2rem;
+}
+
+.text_container h1 {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31.86px;
+  text-transform: uppercase;
+}
+
+.text_container p {
+  color: #202020;
+  font-size: 18px;
+  font-family: var(--font-light);
+  font-weight: 300;
+  line-height: 23.4px;
+  margin: 0.8rem 0;
+}
+
+.text_container button {
+  margin-top: 1rem;
+  display: flex;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: var(--button-gradient);
+  font-size: 1rem;
+  font-family: var(--font-light);
+  font-weight: 600;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

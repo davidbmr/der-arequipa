@@ -1,0 +1,63 @@
+<svg width="1920" height="1440" viewBox="0 0 1920 1440" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_729_4521" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="240" y="0" width="1440" height="1440">
+<path d="M1680 0H240V1440H1680V0Z" fill="url(#paint0_radial_729_4521)"/>
+</mask>
+<g mask="url(#mask0_729_4521)">
+<mask id="mask1_729_4521" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="1440">
+<path d="M1920 0H0V1440H1920V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_729_4521)">
+<mask id="mask2_729_4521" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="1440">
+<path d="M1920 0H0V1440H1920V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask2_729_4521)">
+<path d="M240.5 0V1440" stroke="#D0D5DD"/>
+<path d="M320.5 0V1440" stroke="#D0D5DD"/>
+<path d="M400.5 0V1440" stroke="#D0D5DD"/>
+<path d="M480.5 0V1440" stroke="#D0D5DD"/>
+<path d="M560.5 0V1440" stroke="#D0D5DD"/>
+<path d="M640.5 0V1440" stroke="#D0D5DD"/>
+<path d="M720.5 0V1440" stroke="#D0D5DD"/>
+<path d="M800.5 0V1440" stroke="#D0D5DD"/>
+<path d="M880.5 0V1440" stroke="#D0D5DD"/>
+<path d="M960.5 0V1440" stroke="#D0D5DD"/>
+<path d="M1040.5 0V1440" stroke="#D0D5DD"/>
+<path d="M1120.5 0V1440" stroke="#D0D5DD"/>
+<path d="M1200.5 0V1440" stroke="#D0D5DD"/>
+<path d="M1280.5 0V1440" stroke="#D0D5DD"/>
+<path d="M1360.5 0V1440" stroke="#D0D5DD"/>
+<path d="M1440.5 0V1440" stroke="#D0D5DD"/>
+<path d="M1520.5 0V1440" stroke="#D0D5DD"/>
+<path d="M1600.5 0V1440" stroke="#D0D5DD"/>
+</g>
+<mask id="mask3_729_4521" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="1440">
+<path d="M1920 0H0V1440H1920V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask3_729_4521)">
+<path d="M0 79.5H1920" stroke="#D0D5DD"/>
+<path d="M0 159.5H1920" stroke="#D0D5DD"/>
+<path d="M0 239.5H1920" stroke="#D0D5DD"/>
+<path d="M0 319.5H1920" stroke="#D0D5DD"/>
+<path d="M0 399.5H1920" stroke="#D0D5DD"/>
+<path d="M0 479.5H1920" stroke="#D0D5DD"/>
+<path d="M0 559.5H1920" stroke="#D0D5DD"/>
+<path d="M0 639.5H1920" stroke="#D0D5DD"/>
+<path d="M0 719.5H1920" stroke="#D0D5DD"/>
+<path d="M0 799.5H1920" stroke="#D0D5DD"/>
+<path d="M0 879.5H1920" stroke="#D0D5DD"/>
+<path d="M0 959.5H1920" stroke="#D0D5DD"/>
+<path d="M0 1039.5H1920" stroke="#D0D5DD"/>
+<path d="M0 1119.5H1920" stroke="#D0D5DD"/>
+<path d="M0 1199.5H1920" stroke="#D0D5DD"/>
+<path d="M0 1279.5H1920" stroke="#D0D5DD"/>
+<path d="M0 1359.5H1920" stroke="#D0D5DD"/>
+</g>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_729_4521" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(960 -0.000171661) rotate(90) scale(1440 751.588)">
+<stop/>
+<stop offset="0.953125" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
