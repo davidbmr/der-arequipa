@@ -1,61 +1,56 @@
 @font-face {
-  font-family: 'font-medium'; 
-  src: url('../Gotham/GothamMedium.ttf');
+	font-family: "font-medium";
+	src: url("../Gotham/GothamMedium.ttf");
 }
 
 @font-face {
-  font-family: 'font-light'; 
-  src: url('../Gotham/Gotham-Light.otf');
+	font-family: "font-light";
+	src: url("../Gotham/Gotham-Light.otf");
 }
 
 @font-face {
-  font-family: 'font-500'; 
-  src: url('../Gotham/GothamMedium_1.ttf');
+	font-family: "font-500";
+	src: url("../Gotham/GothamMedium_1.ttf");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'font-medium';
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* font-family: 'font-medium'; */
+	font-family: "Poppins", sans-serif;
 }
 
-
-
-button{
-  cursor: pointer;
+button {
+	cursor: pointer;
 }
 
 :root {
-  --primary-purple: #342071;
-  --base-semi-black: #202020;
-  --secondary-orange: #E6883C;
-  --base-red: #C7335C;
-  --base-white: #FFF;
-  --gray-900: #101828;
-  --button-gradient: linear-gradient(180deg, #342071 0%, #937DD5 100%);
-  --font-medium: 'font-medium';
-  --font-light: "font-light";
-  --font-500: "font-500";
-  --poppins: 'Poppins', sans-serif;
+	--primary-purple: #342071;
+	--base-semi-black: #202020;
+	--secondary-orange: #e6883c;
+	--base-red: #c7335c;
+	--base-white: #fff;
+	--gray-900: #101828;
+	--button-gradient: linear-gradient(180deg, #342071 0%, #937dd5 100%);
+	--font-medium: "font-medium";
+	--font-light: "font-light";
+	--font-500: "font-500";
+	--poppins: "Poppins", sans-serif;
 }
 
+@import "primereact/resources/themes/lara-light-indigo/theme.css";
 
-@import "primereact/resources/themes/lara-light-indigo/theme.css";     
-    
-@import "primereact/resources/primereact.min.css";   
-
-
+@import "primereact/resources/primereact.min.css";
 
 /* SCROLL BAR */
 ::-webkit-scrollbar {
-  width: 6px; /* ancho de la barra de desplazamiento */
-  background-color: #eeeeec; /* color de fondo de la barra de desplazamiento */
+	width: 6px; /* ancho de la barra de desplazamiento */
+	background-color: #eeeeec; /* color de fondo de la barra de desplazamiento */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #342071; /* color del indicador de la barra de desplazamiento */
+	background-color: #342071; /* color del indicador de la barra de desplazamiento */
 }
