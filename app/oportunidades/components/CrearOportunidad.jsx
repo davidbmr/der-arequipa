@@ -9,7 +9,7 @@ import DocumentUpload from "@/components/UploadInput/UploadInput";
 import useAuthStore from "@/store/AuthState";
 import style from "../Oportunidades.module.css";
 import axios from "axios";
-import api from "@/connections/mainApi";
+import api, { baseURL } from "@/connections/mainApi";
 import { ToastContainer, toast } from "react-toastify";
 
 const CrearOportunidad = ({ hideModal, fetchData }) => {
@@ -48,7 +48,7 @@ const CrearOportunidad = ({ hideModal, fetchData }) => {
       formDataForImage.append("file", selectedFile);
 
       try {
-        const uploadResponse = await axios.post("http://84.46.241.5:4000/api/upload", formDataForImage, {
+        const uploadResponse = await axios.post(`${baseURL}/api/upload`, formDataForImage, {
           headers: {
             "Content-Type": "multipart/form-data",
           },
@@ -146,7 +146,7 @@ const CrearOportunidad = ({ hideModal, fetchData }) => {
           <DocumentUpload onDocumentUpload={handleFileUpload} />
         </div>
 
-        <div className={style.select__container}>
+        <div className={style.select__container} style={{width: "100%"}}>
           <label htmlFor="nombre_empresa">Empresa*</label>
           <InputText {...register("nombre_empresa")} className={style.select__input} placeholder="Ingrese texto" />
         </div>
@@ -154,6 +154,7 @@ const CrearOportunidad = ({ hideModal, fetchData }) => {
         <button className={style.btn__publicar} type="submit">
           Publicar
         </button>
+        
       </form>
       <ToastContainer />
     </>

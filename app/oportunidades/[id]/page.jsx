@@ -6,8 +6,9 @@ import Banner from "../../../public/Oportunidades/imgBanner.svg";
 import calendarIcon from "../../../public/Oportunidades/calendar.svg";
 import checkIcon from "../../../public/Oportunidades/checkIcon.svg";
 import { useParams } from "next/navigation";
-import api from "@/connections/mainApi";
+
 import formatDate from "@/helper/formateDate";
+import api, { baseURL } from "@/connections/mainApi";
 
 const Page = () => {
   const {id} = useParams()
@@ -29,11 +30,11 @@ const Page = () => {
   }, [])
   
 
-  console.log(data)
+ console.log(baseURL)
 
   return (
     <div className={style.oportunidades_id_container}>
-     <Image src={`http://84.46.241.5:4000/api/download/${data.imagen}`} alt="oportunidades" className={style.card__img__banner}  width={500} height={200}/>
+     <Image src={`${baseURL}/api/download/${data.imagen}`} alt="oportunidades" className={style.card__img__banner}  width={500} height={200}/>
       <div className={style.header__container_id}>
         <h2>{data.titulo}</h2>
         <div className={style.contenedor__subtitle}>

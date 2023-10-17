@@ -16,7 +16,7 @@ import DocumentUpload from "@/components/UploadInput/UploadInput";
 import Link from "next/link";
 import useAuthStore from "@/store/AuthState";
 import axios from "axios";
-import api from "@/connections/mainApi";
+import api, { baseURL } from "@/connections/mainApi";
 import formatDate from "@/helper/formateDate";
 import CrearOportunidad from "./components/CrearOportunidad";
 import useCategoryStore from "@/store/useCategory";
@@ -87,7 +87,7 @@ const Oportunidades = () => {
         {filteredData.map((item, index) => (
           <div key={index} className={style.oportunidades__card}>
             <div className={style.card__img}>
-              <Image src={`http://84.46.241.5:4000/api/download/${item.imagen}`} alt="oportunidades" width={400} height={200} />
+              <Image src={`${baseURL}/api/download/${item.imagen}`} alt="oportunidades" width={400} height={200} />
             </div>
             <div className={style.card__text}>
               <div className={style.tags}>

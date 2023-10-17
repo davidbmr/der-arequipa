@@ -4,8 +4,9 @@ import styled from "./ActualidadCard.module.css";
 import img from '@/public/Actualidad/actualidad.svg'
 import arrow from '@/public/Actualidad/arrow.svg'
 import formatDate from "@/helper/formateDate";
+import { baseURL } from "@/connections/mainApi";
 
-function ActualidadCard({ id_noticia, introduccion, created_at,titulo}) {
+function ActualidadCard({ id_noticia, introduccion, created_at,titulo,imagen}) {
 
   const words = introduccion.split(' ');
 
@@ -18,7 +19,7 @@ function ActualidadCard({ id_noticia, introduccion, created_at,titulo}) {
   return (
     <div className={styled.container_card}>
      <div className={styled.container_img}>
-    <Image src={img} alt={titulo} layout="fill" objectFit="cover" />
+    <Image src={`${baseURL}/api/download/${imagen}`}  alt={titulo} layout="fill" objectFit="cover" />
     <div className={styled.container_img_text}>
         <h5>{titulo}</h5>
         <p>{formatDate(created_at)}</p>

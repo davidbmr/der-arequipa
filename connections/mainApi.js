@@ -5,7 +5,8 @@ const testBaseURL = "";
 
 const urls = [serverBaseURL, testBaseURL];
 
-const baseURL = urls[0];
+export const baseURL = urls[0];
+
 
 const api = axios.create({
   baseURL,

@@ -1,10 +1,10 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 
 import style from "../Actualidad.module.css";
 
-import IDEA from "@/public/Actualidad/actualidad.svg"
-import arrow from "@/public/Actualidad/arrow.svg"
+import IDEA from "@/public/Actualidad/actualidad.svg";
+import arrow from "@/public/Actualidad/arrow.svg";
 import IMG1 from "../../../public/Actualidad/actualidadIMG.svg";
 import copyIcon from "../../../public/Actualidad/copyIcon.svg";
 import facebookIcon from "../../../public/Actualidad/facebookicon.svg";
@@ -15,36 +15,36 @@ import ActualidadCard from "@/components/Actualidad/Actualidad-Card/ActualidadCa
 import Link from "next/link";
 import api from "@/connections/mainApi";
 
-const page = ({params}) => {
-  const [data, setData] = useState([])
-  const [noticiasData, setNoticiasData] = useState([])
+const page = ({ params }) => {
+  const [data, setData] = useState([]);
+  const [noticiasData, setNoticiasData] = useState([]);
   const lastTwoNews = noticiasData.slice(-2);
-  const {id} = params;
+  const { id } = params;
 
   const fetchDataNoticias = () => {
-    const url = `/api/noticia`
-    api.get(url)
-    .then((res) => {
-      setNoticiasData(res.data)
-    })
-    .catch(err => console.log(err))
-  }
+    const url = `/api/noticia/recomendados/${id}`;
+    api
+      .get(url)
+      .then((res) => {
+        setNoticiasData(res.data);
+      })
+      .catch((err) => console.log(err));
+  };
 
   const fetchData = () => {
-    const url = `/api/noticia/${id}`
+    const url = `/api/noticia/${id}`;
 
-    api.get(url)
-    .then(res => setData(res.data))
-    .catch(err => console.log(err))
-  }
+    api
+      .get(url)
+      .then((res) => setData(res.data))
+      .catch((err) => console.log(err));
+  };
 
   useEffect(() => {
-   fetchData()
-   fetchDataNoticias()
-  }, [])
+    fetchData();
+    fetchDataNoticias();
+  }, []);
 
-  console.log(lastTwoNews)
-  
   return (
     <div className={style.actualidad__container}>
       <div className={style.header__container}>
@@ -60,21 +60,14 @@ const page = ({params}) => {
 
       <div className={style.container__de__contenido}>
         <div className={style.content__container}>
-      
           <h2>Introducción</h2>
 
-          <p>
-           {data.introduccion}
-          </p>
-
-         
+          <p>{data.introduccion}</p>
 
           <div className={style.img__banner}></div>
 
-          <p>
-     {data.cuerpo}
-          </p>
-<hr />
+          <p>{data.cuerpo}</p>
+          <hr />
           <div className={style.social__container}>
             <span>Compartir noticia</span>
 
@@ -103,20 +96,13 @@ const page = ({params}) => {
             <p>Entérate de todas nuestras novedades.</p>
           </div>
 
-         <Link href={'/actualidad'} className={style.btn__ver}>
-         <button>Ver Todos</button>
-         </Link>
-
+          <Link href={"/actualidad"} className={style.btn__ver}>
+            <button>Ver Todos</button>
+          </Link>
         </div>
         <div className={style.actualidad__post__items}>
           {lastTwoNews.map((news) => (
-            <ActualidadCard
-              key={news.id_noticia}
-              introduccion={news.introduccion}
-              created_at={news.created_at}
-              titulo={news.titulo}
-              id_noticia={news.id_noticia}
-            />
+            <ActualidadCard key={news.id_noticia} introduccion={news.introduccion} created_at={news.created_at} titulo={news.titulo} id_noticia={news.id_noticia} imagen={news.imagen} />
           ))}
         </div>
       </div>
@@ -125,5 +111,3 @@ const page = ({params}) => {
 };
 
 export default page;
-
-

@@ -454,7 +454,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40%;
+  width: 80%;
   flex-direction: column;
   gap: 16px;
 }
@@ -465,9 +465,10 @@
 
 .contenedor__subtitle {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-self: stretch;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
 }
 
 .categorias__container__id ul {
@@ -480,6 +481,7 @@
 
 .categorias__container__id li {
   display: flex;
+  width: 100%;
   padding: 10px 14px;
   justify-content: center;
   align-items: center;
@@ -515,7 +517,7 @@
 .categorias__container__id {
   display: flex;
   padding: 6px;
-  width: 25%;
+  width: 40%;
 
   align-items: center;
   gap: 8px;
@@ -676,17 +678,60 @@
   .calendar {
     width: 100%;
   }
+
+  .categorias__container__id {
+    width: 90%;
+    white-space: nowrap;
+  }
+
+  .card__img__banner {
+    width: 100%;
+    height: 20%;
+    margin: 0;
+    padding: 0 0.5rem;
+    border-radius: 16px;
+  }
+
+  .card__img__banner img {
+    border-radius: 16px;
+  }
+
+  .contenedor__subtitle,
+  .fechas {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .calendar {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .content__contenedor {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 1.5rem;
+    margin: 0;
+    justify-content: flex-start;
+  }
 }
 
 .categorias__container {
   display: none;
 }
 
+
+
+
+
 @media (min-width: 1100px) {
   .categorias__container {
     display: block;
   }
-  .select__mobile {
+
+  .oportunidades_categorias .select__mobile {
     display: none;
   }
 }
@@ -705,7 +750,6 @@
   .input__modal__group {
     width: 100%;
     flex-direction: column;
-  
   }
 
   .select__container {
